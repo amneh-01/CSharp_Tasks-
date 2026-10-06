@@ -15,4 +15,3 @@ A simple C# Console Application demonstrating fundamental programming concepts a
 - [x] Modifying an array element
 - [x] Displaying results using `Console.WriteLine()`
 
-## 💻 Code Example
