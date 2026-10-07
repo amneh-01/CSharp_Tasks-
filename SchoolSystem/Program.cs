@@ -31,24 +31,24 @@ namespace SchoolSystem
             //////////////////////////////////////////////////////////////////
             Console.WriteLine(" \n------------Part-2------------------\n ");
 
-            string[] arr = { "Ahmad", "Sara", "Omar", "Lina" };
+            string[] students = { "Ahmad", "Sara", "Omar", "Lina" };
 
             Console.WriteLine("===== Before Change =====" + "\n" +
-                              "Student 1:" + arr[0] + "\n" +
-                              "Student 0:" + arr[1] + "\n" +
-                              "Student 2:" + arr[2] + "\n" +
-                              "Student 3:" + arr[3] + "\n" +
-                              "Number of Students:" + arr.Length );
+                              "Student 1:" + students[0] + "\n" +
+                              "Student 0:" + students[1] + "\n" +
+                              "Student 2:" + students[2] + "\n" +
+                              "Student 3:" + students[3] + "\n" +
+                              "Number of Students:" + students.Length );
 
             /////////////////////////////////////////////////////////////////////
             Console.WriteLine(" \n------------Part-3------------------\n ");
 
-               arr[2] = "Arwa";
+            students[2] = "Arwa";
             Console.WriteLine("===== After Change =====" + "\n" +
-                              "Student 1:" + arr[0] + "\n" +
-                              "Student 0:" + arr[1] + "\n" +
-                              "Student 2:" + arr[2] + "\n" +
-                              "Student 3:" + arr[3] + "\n" );
+                              "Student 1:" + students[0] + "\n" +
+                              "Student 0:" + students[1] + "\n" +
+                              "Student 2:" + students[2] + "\n" +
+                              "Student 3:" + students[3] + "\n" );
 
 
         }
