@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\bin\Debug\SchoolSystem3.exe.config
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\bin\Debug\SchoolSystem3.exe
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\bin\Debug\SchoolSystem3.pdb
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\obj\Debug\SchoolSystem3.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\obj\Debug\SchoolSystem3.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\obj\Debug\SchoolSystem3.exe
+C:\Users\user\Desktop\CSharp_Tasks-\SchoolSystem3\obj\Debug\SchoolSystem3.pdb

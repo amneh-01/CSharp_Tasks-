@@ -52,7 +52,7 @@ namespace SchoolSystem2
             
             Console.WriteLine("===== STUDENT SUMMARY ===== \n" +
                                "Welcome :" + studentName.ToUpper() + "\n" +
-                               "Name:" + studentName + "\n" +
+                               "Name:" + studentName + "\n" + 
                                "Age:" + studentAge + "\n" +
                                "Grade:" + studentGrade + "\n" +
                                "Average:" + studentAverage + "\n" +

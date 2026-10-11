@@ -25,7 +25,7 @@ namespace SchoolSystem
                                  "Grade:" + studentGrade + "\n" +
                                  "Average:" + studentAverage + "\n" +
                                  "Gender:" + studentGender + "\n" +
-                                  "Active:" + isstudentActive);
+                                  "Active:" + isstudentActive);  
 
 
             //////////////////////////////////////////////////////////////////
