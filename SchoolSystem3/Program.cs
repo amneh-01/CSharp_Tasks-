@@ -15,18 +15,12 @@ namespace SchoolSystem3
             int[] stuGrades = { 20, 50, 90 , 80 , 70 };
 
 
-                foreach (int stu in stuGrades)
-                {
-                    Console.WriteLine(stu);
-
-                }
-
             void DisplayStudents()
             {
-                Console.WriteLine("1. Students Array");
-                for (int i = 0; i < stuNames.Length; i++)
+                Console.WriteLine("Students Name"); 
+                foreach (string name in stuNames)
                 {
-                    Console.WriteLine(stuNames[i]);
+                    Console.WriteLine(name);
                 }
             }
 
@@ -108,9 +102,9 @@ namespace SchoolSystem3
 
                     case 4:
                          return;
-                        break;
+                        
 
-                   
+
                 }
 
             } while (choice != 4);
