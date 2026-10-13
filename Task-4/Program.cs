@@ -11,6 +11,8 @@ namespace Task_4
         static void Main(string[] args)
         {
 
+
+            Console.WriteLine("===== Student Information =====");
             Student stu1 = new Student("Amneh", 24 , 90);
             Console.WriteLine(stu1.DisplayInfo());
 

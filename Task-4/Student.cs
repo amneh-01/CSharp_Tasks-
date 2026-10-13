@@ -16,7 +16,7 @@ namespace Task_4
 
         public string DisplayInfo()
         { 
-                return $"Name: {Name}, Age: {Age}, Grade: {Grade}";
+                return $"Name: {Name} \nAge: {Age} \nGrade: {Grade} \n";
         }
 
 
