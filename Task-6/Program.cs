@@ -18,27 +18,27 @@ namespace Task_6
             
             List<GameCharacter> characters = new List<GameCharacter>();
 
-            Warrior alex = new Warrior("Alex", 80);
-            Wizard luna = new Wizard("Luna", 70);
+            Warrior p1 = new Warrior("player-1", 80);
+            Wizard p2 = new Wizard("player-2", 70);
 
-            characters.Add(alex);
-            characters.Add(luna);
+            characters.Add(p1);
+            characters.Add(p2);
 
             Console.WriteLine();
+             
+           
+            p1.UseSpecialAbility();
+            p1.TakeDamage(10); 
+            p1.DisplayHealth();
 
            
-            alex.UseSpecialAbility();
-            alex.TakeDamage(10); 
-            alex.DisplayHealth();
-
-           
-            alex.Heal();   
-            alex.Heal(15);  
+            p1.Heal();   
+            p1.Heal(15);  
 
      
-            luna.UseSpecialAbility();
-            luna.TakeDamage(10); 
-            luna.DisplayHealth();
+            p2.UseSpecialAbility();
+            p2.TakeDamage(10); 
+            p2.DisplayHealth();
 
            
             HealthPotion potion = new HealthPotion("Health Potion");
@@ -46,10 +46,8 @@ namespace Task_6
             Console.WriteLine();
 
            
-            potion.Use(luna, "15"); 
-
-            
-            potion.Use(luna, "abc"); 
+            potion.Use(p2, "15"); 
+            potion.Use(p2, "abc"); 
             
         }
     }

@@ -8,22 +8,19 @@ namespace Task_6
 {
     public abstract class GameCharacter
     {
-        private string _name;
-        public string Name
-        {
-            get => _name;
-            set => _name = value;
-        }
-
+       
+        public string Name { get; set; }
+       
         private int _health;
         protected int Health
         {
             get => _health;
             set
             {
-                if (value < 0) _health = 0;
-                else if (value > 100) _health = 100;
-                else _health = value;
+                if (value >= 0 && value <= 100)
+                { _health = value;  }
+                else
+                { Console.WriteLine("Health cannot be negative."); }
             }
         }
 
@@ -38,9 +35,10 @@ namespace Task_6
         public virtual void TakeDamage(int amount)
         {
             Health -= amount;
+            
         }
 
-        // Method Overloading للشفاء
+      
         public void Heal()
         {
             Health += 10;
@@ -61,6 +59,30 @@ namespace Task_6
         }
     }
 
+
+    public class Warrior : GameCharacter
+    {
+        public Warrior(string name, int health) : base(name, health)
+        {
+
+            Console.WriteLine($"Warrior {Name} enters the game!");
+        }
+
+        public override void UseSpecialAbility()
+        {
+            Console.WriteLine("The Warrior attacks with a sword!");
+        }
+
+        public override void TakeDamage(int amount)
+        {
+
+            int actualDamage = amount - 2;
+            if (actualDamage < 0) actualDamage = 0;
+
+            Health -= actualDamage;
+            Console.WriteLine($"{Name} takes {actualDamage} damage.");
+        }
+    }
 
 
     public class Wizard : GameCharacter
@@ -106,41 +128,13 @@ namespace Task_6
             }
             catch (FormatException)
             {
-                Console.WriteLine("Invalid input! Please enter a number.");
+                Console.WriteLine("Invalid input!");
             }
         }
     }
 
 
-    public class Warrior : GameCharacter
-    {
-        public Warrior(string name, int health) : base(name, health)
-        {
-           
-            Console.WriteLine($"Warrior {Name} enters the game!");
-        }
-
-        public override void UseSpecialAbility()
-        {
-            Console.WriteLine("The Warrior attacks with a sword!");
-        }
-
-        public override void TakeDamage(int amount)
-        {
-           
-            int actualDamage = amount - 2;
-            if (actualDamage < 0) actualDamage = 0;
-
-            Health -= actualDamage;
-            Console.WriteLine($"{Name} takes {actualDamage} damage.");
-        }
-    }
-
-
-    public interface ICollectible
-    {
-        void Collect();
-    }
+ 
 }
 
 
