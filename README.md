@@ -86,4 +86,29 @@ A simple C# console application demonstrating the core fundamentals of **Object-
 * **Parameterized Constructor:** Initializes object properties upon instantiation.
 * **`DisplayInfo()` Method:** Prints formatted student details to the console.
 * **Multiple Objects:** Instantiates and manages multiple student instances inside `Main()`.
+-------------------------------------------------------------------------------------------------------------------
+
+Task5-C#.............(13/10)
+
+## 🎯 Key Topics Covered
+
+In this task, we implemented and covered the following C# and OOP concepts:
+
+* **Inheritance & Constructors (`base`)**
+  * Created a base class (`Person`) and derived classes (`Student`, `Teacher`).
+  * Used the `base` keyword to invoke base class constructors.
+
+* **Access Modifiers & Encapsulation**
+  * `public`: Members accessible from anywhere in the program.
+  * `protected`: Members (`SchoolName`) accessible only within the base class and derived classes.
+  * `private`: Internal fields (`_internalCode`) strictly encapsulated within their own class.
+
+* **Properties**
+  * Utilized **Auto-implemented Properties** for clean, readable code (`Name`, `Age`, `Grade`, `Subject`).
+
+* **Sealed Classes**
+  * Applied the `sealed` modifier on `SchoolReport` to prevent further class inheritance and secure class functionality.
+
+* **Object Instantiation & Method Overriding concepts**
+  * Instantiated multiple objects in `Main()` and tested visibility and method invocation across inheritance boundaries.
 
